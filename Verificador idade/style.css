@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.video{
+    z-index: -1000;
+    position: absolute;
+    top: 0;
+}
+
+/*Formatação da section e suas divs/conteúdo*/
+
+.div-content{
+    background-color: white;
+    width: 500px;
+    /*height: 500px;*/
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 3px 0px 2px 10px rgb(255, 255, 255);
+}
+
+.div-content h1{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 22px;
+    border-bottom: 1px solid #ccc;
+}
+
+.div-data{
+    margin-top: 25px;
+    color:black;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.div-submit input{
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.781);
+    color: white;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 10%;
+    position: relative;
+    left: 210px;
+}
+
+label{
+    color: black;
+    font-size: 15px;
+}
+
+#res{
+    font-size: 18px;
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+/*formatação do rodapé*/
+footer{
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+span{
+    color: white;    
+    font-size: 18px;
+    font-family: sans-serif;
+}

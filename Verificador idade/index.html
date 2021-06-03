@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Verificador de dados</title>
+    </head>
+
+    <body>
+        <section>
+            <div class="video">
+                <video autoplay loop muted>
+                     <source src="midia/video.mp4" type="video/mp4">
+                </video>
+            </div>        
+
+            <div class="div-content">
+                <h1>Verificador de dados</h1>
+
+            <div class="div-data">
+                <p>Digite seu nome
+                     <input type="text" name="txtnome" id="txtnome">
+                </p>
+
+                <p>Digite seu ano de nascimento
+                     <input type="number" name="txtnum" id="txtnum" min="0">
+                </p>
+
+                <p>Seu sexo: 
+                    <input type="radio" name="radiochoice" id="masc">
+                    <label for="masc"> Masculino</label>
+                    <input type="radio" name="radiochoice" id="fem">
+                    <label for="fem">Feminino</label>
+                    <input type="radio" name="radiochoice" id="none">
+                    <label for="none">Prefiro não responder</label>
+                </p>
+            </div>
+                
+            <div class="div-submit">
+                <input type="submit" value="Verificar" onclick="verificar()">
+               <!--<input type="reset" value="Limpar" onclick="clear()"> !-->
+            </div> 
+
+            <div id="res">
+                Insira as informações acima para obter uma resposta
+            </div>
+            </div>       
+    </section>
+
+    <footer>
+         <span>Copyright by &copy; Matheus Penha</span>
+    </footer>
+    <script src= "script.js"></script>
+    </body>
+</html>
