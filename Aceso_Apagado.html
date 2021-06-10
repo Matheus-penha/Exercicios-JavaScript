@@ -1,0 +1,26 @@
+<!--lâmpada acesa e apagada: mouse passa por cima, lâmpada acenda, mouse sai, lâmpada apaga-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aceso, apagado</title>
+    </head>
+    
+    <body>
+        <img src="images/apagada.jpg" id="lamp_apagada" onmouseover="muda()" onmouseout="volta()">
+
+        <script type="text/javascript">
+//para mudar a imagem, foi alterado um atributo HTML, o .src altera a imagem.
+            function muda(){
+               document.getElementById('lamp_apagada').src = "images/acesa.jpg";
+            }
+
+            function volta(){
+                document.getElementById('lamp_apagada').src = "images/apagada.jpg";
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!--Botão que exibe nome e sobrenome (previamente inseridos pelo usuário) de uma pessoa.-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Saudação</title>
+    </head>
+
+    <body>
+        <label>Digite seu nome</label>
+        <input type="text" name="texto" id="txtnome">
+
+        <label>Digite seu sobrenome</label>        
+        <input type="text" name="texto" id="txtsob_nome">
+
+        <input type="submit" value="Saudação" onclick="saudar()">
+
+        <script type="text/javascript">
+            function saudar(){
+            var nome = document.getElementById('txtnome');
+            var sob_nome= document.getElementById('txtsob_nome');
+
+            alert(`Olá, ${nome.value} ${sob_nome.value}`);
+        }
+        </script>
+    </body>
+</html>
