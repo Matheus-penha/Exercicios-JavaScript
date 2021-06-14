@@ -1,0 +1,59 @@
+<!DOCTYPE html> <!--informa ao agente de usuário a versão de html a ser renderizada -->
+<html>
+    <head>
+        <title>Exercício Tabuada</title>
+        <meta charset="utf-8"/>
+        <meta name="author" content="Matheus Penha">
+        <meta name="description" content="Estrutura base html">
+        <meta name="keywords" content="html">
+    </head>
+    
+  <body> 
+      <h1>Exercício Tabuada</h1>
+      <div id="output"></div>
+
+          <button onclick="calcular('+')">+</button>
+          <button onclick="calcular('-')">-</button>
+          <button onclick="calcular('*')">*</button>
+          <button onclick="calcular('/')">/</button>
+          <button onclick="clearValue()">Limpar Valores</button>
+          
+      <script>
+            var output = document.querySelector("#output");
+
+            var n1 = parseFloat(prompt("Digite um número:"));
+            var n2 = parseFloat(prompt("Digite outro valor: "));
+            
+            var textotela='';
+
+            function calcular(sinal){
+                switch(sinal){
+                   case '+':
+                       textotela = "A soma é: " + (n1+n2); /*n1+=n2*/
+                       /* clearValue();*/
+                        break;
+
+                    case '-':
+                    textotela = "A subtração é: " + (n1-n2); /*n1-=n2*/
+                        break;
+
+                        case '*':
+                    textotela = "A multiplicação é: " + (n1*n2); /*n1*=n2*/
+                        break;
+
+                        case '/':
+                    textotela = "A divisão é: " + (n1/n2); /*n1/=n2*/
+                       /* break;
+                        default:
+                            textotela="Erro.";*/
+                }
+                output.innerHTML = textotela;
+            }
+
+            function clearValue(){
+                textotela='';
+                output.innerHTML=textotela;
+            }
+      </script>
+  </body>  
+</html>
